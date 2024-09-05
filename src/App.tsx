@@ -3,14 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "./redux/store";
 import { fetchUsers, setSearchQuery } from "./redux/userSlice";
 import debounce from "lodash/debounce";
-
-import LoadingSpinner from "./components/LoadingSpinner";
-import ErrorMessage from "./components/ErrorMessage";
-import NoUsersMessage from "./components/NoUsersMessage";
+import ErrorMessage from "./ui/ErrorMessage";
+import NoUsersMessage from "./ui/NoUsersMessage";
 import SearchFields from "./components/SearchFields";
 import UserTable from "./components/UserTable";
 import normalizePhoneNumber from "./utils/normalizePhoneNumber";
 import Layout from "./ui/Layout";
+import Spinner from "./ui/Spinner";
 
 function App() {
   const dispatch: AppDispatch = useDispatch();
@@ -50,7 +49,7 @@ function App() {
     );
   });
 
-  if (loading) return <LoadingSpinner />;
+  if (loading) return <Spinner />;
   if (error) return <ErrorMessage error={error} />;
 
   return (

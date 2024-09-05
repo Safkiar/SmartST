@@ -1,5 +1,5 @@
 const normalizePhoneNumber = (phone: string) => {
-  return phone.replace(/\D/g, "");
+  return phone.replace(/([x\-\.\(\)])/g, "");
 };
 
 export default normalizePhoneNumber;
