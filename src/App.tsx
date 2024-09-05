@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "./redux/store";
 import { fetchUsers, setSearchQuery } from "./redux/userSlice";
-import { debounce } from "lodash";
 import ErrorMessage from "./ui/ErrorMessage";
 import NoUsersMessage from "./ui/NoUsersMessage";
 import SearchFields from "./components/SearchFields";
@@ -10,6 +9,8 @@ import UserTable from "./components/UserTable";
 import normalizePhoneNumber from "./utils/normalizePhoneNumber";
 import Layout from "./ui/Layout";
 import Spinner from "./ui/Spinner";
+
+const debounce = window._.debounce;
 
 function App() {
   const dispatch: AppDispatch = useDispatch();
