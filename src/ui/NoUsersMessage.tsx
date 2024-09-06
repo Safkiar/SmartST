@@ -8,7 +8,7 @@ const MessageContainer = styled.div`
   background-color: #911f1fc3;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  color: black
+  color: black;
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1px;
