@@ -4,9 +4,9 @@ import { ReactNode } from "react";
 const StyledLayout = styled.div`
   min-width: 90vw;
   margin-top: 3rem;
-  background-color: #892be2e0;
+  background-color: #f8e1c0;
   border-radius: 7px;
-  border: 1px solid #ff1493;
+  /* border: 1px solid #ff1493; */
 
   @media (max-width: 768px) {
     min-width: 100vw;

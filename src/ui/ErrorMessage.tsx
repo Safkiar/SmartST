@@ -8,7 +8,7 @@ const ErrorContainer = styled.div`
   background-color: #ff1744;
   border-radius: 7px;
   border: 1px solid #fe071c;
-  color: #ffffff;
+  color: #000000;
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;

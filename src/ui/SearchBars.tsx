@@ -13,6 +13,18 @@ const StyledBars = styled.div`
     width: 20%;
     padding: 0.5rem 0.9rem;
     font-size: 1rem;
+    background-color: #1e838c;
+    border-radius: 6px;
+    color: black;
+  }
+
+  input::placeholder {
+    color: #000000;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0px 2px 2px #1d4347;
   }
 
   @media (max-width: 768px) {

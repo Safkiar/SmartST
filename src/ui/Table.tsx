@@ -5,8 +5,10 @@ const StyledTable = styled.table`
   font-size: 1.4rem;
   min-width: 100%;
   overflow: hidden;
-  background-color: #f90981f0;
+  background-color: #ffffffef;
   border-collapse: collapse;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 
   @media (max-width: 768px) {
     font-size: 1rem;

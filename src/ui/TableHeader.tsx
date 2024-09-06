@@ -5,6 +5,7 @@ const StyledHeader = styled.tr`
   text-transform: uppercase;
   letter-spacing: 0.4px;
   font-weight: 600;
+  background-color: #f8dec0;
 
   th {
     width: 25%;

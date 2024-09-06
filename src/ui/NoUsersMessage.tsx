@@ -5,10 +5,10 @@ const MessageContainer = styled.div`
   margin-top: 3rem;
   padding: 1.8rem;
   text-align: center;
-  background-color: #f13d3dc3;
-  border-radius: 7px;
-  border: 1px solid #ff1493;
-  color: #ffffff;
+  background-color: #911f1fc3;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: black
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1px;
